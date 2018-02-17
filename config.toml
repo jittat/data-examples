@@ -1,0 +1,6 @@
+languageCode = "th"
+title = "การเขียนโปรแกรมประมวลผลข้อมูล"
+baseurl = "http://example.org/"
+theme = "hugo-theme-learn"
+publishDir = "docs"
+
