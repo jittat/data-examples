@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>แนะนำภาษา R on การเขียนโปรแกรมประมวลผลข้อมูล</title>
-    <link>http://example.org/r-lang/</link>
+    <link>https://jittat.github.io/data-examples/r-lang/</link>
     <description>Recent content in แนะนำภาษา R on การเขียนโปรแกรมประมวลผลข้อมูล</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>th</language>
     <lastBuildDate>Sat, 17 Feb 2018 23:19:02 +0700</lastBuildDate>
     
-	<atom:link href="http://example.org/r-lang/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jittat.github.io/data-examples/r-lang/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

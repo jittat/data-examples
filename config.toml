@@ -1,6 +1,6 @@
 languageCode = "th"
 title = "การเขียนโปรแกรมประมวลผลข้อมูล"
-baseurl = "http://example.org/"
+baseurl = "https://jittat.github.io/data-examples/"
 theme = "hugo-theme-learn"
 publishDir = "docs"
 

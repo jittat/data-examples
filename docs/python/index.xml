@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>แนะนำไพธอน on การเขียนโปรแกรมประมวลผลข้อมูล</title>
-    <link>http://example.org/python/</link>
+    <link>https://jittat.github.io/data-examples/python/</link>
     <description>Recent content in แนะนำไพธอน on การเขียนโปรแกรมประมวลผลข้อมูล</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>th</language>
     <lastBuildDate>Sat, 17 Feb 2018 23:17:15 +0700</lastBuildDate>
     
-	<atom:link href="http://example.org/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jittat.github.io/data-examples/python/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
