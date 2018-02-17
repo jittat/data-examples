@@ -3,4 +3,3 @@ title = "การเขียนโปรแกรมประมวลผล�
 baseurl = "https://jittat.github.io/data-examples/"
 theme = "hugo-theme-learn"
 publishDir = "docs"
-
