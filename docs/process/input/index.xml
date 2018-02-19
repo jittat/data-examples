@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>การเขียนโปรแกรมวิเคราะห์ข้อมูล on การเขียนโปรแกรมประมวลผลข้อมูล</title>
-    <link>https://jittat.github.io/data-examples/</link>
-    <description>Recent content in การเขียนโปรแกรมวิเคราะห์ข้อมูล on การเขียนโปรแกรมประมวลผลข้อมูล</description>
+    <title>การนำเข้าข้อมูล on การเขียนโปรแกรมประมวลผลข้อมูล</title>
+    <link>https://jittat.github.io/data-examples/process/input/</link>
+    <description>Recent content in การนำเข้าข้อมูล on การเขียนโปรแกรมประมวลผลข้อมูล</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>th</language>
-    <lastBuildDate>Sat, 17 Feb 2018 23:29:54 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 19 Feb 2018 00:36:04 +0700</lastBuildDate>
     
-	<atom:link href="https://jittat.github.io/data-examples/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jittat.github.io/data-examples/process/input/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -22,17 +22,6 @@
 import csv csvfile = open(&amp;#39;scores.csv&amp;#39;) reader = csv.reader(csvfile) for row in reader: print(row) csvfile.close() ผลลัพธ์
 [&#39;name&#39;, &#39;score&#39;] [&#39;สมชาย&#39;, &#39;50&#39;] [&#39;สมหญิง&#39;, &#39;45&#39;] [&#39;สมศักดิ์&#39;, &#39;80&#39;] [&#39;ประวิทย์&#39;, &#39;78&#39;] [&#39;ประมาณ&#39;, &#39;56&#39;]  อ่านข้อมูลทีละบรรทัดเป็น dict import csv csvfile = open(&amp;#39;scores.csv&amp;#39;) reader = csv.DictReader(csvfile) for row in reader: print(row) csvfile.close() ผลลัพธ์
 {&#39;name&#39;: &#39;สมชาย&#39;, &#39;score&#39;: &#39;50&#39;} {&#39;name&#39;: &#39;สมหญิง&#39;, &#39;score&#39;: &#39;45&#39;} {&#39;name&#39;: &#39;สมศักดิ์&#39;, &#39;score&#39;: &#39;80&#39;} {&#39;name&#39;: &#39;ประวิทย์&#39;, &#39;score&#39;: &#39;78&#39;} {&#39;name&#39;: &#39;ประมาณ&#39;, &#39;score&#39;: &#39;56&#39;}  อ่านข้อมูลทั้งหมดจากนั้นคืนรายการที่เป็น dict ด้านล่างเป็นฟังก์ชัน read_csv_data ที่คืนค่าเป็น list ของ dict ที่สามารถนำไปใช้ต่อได้เลย และตัวอย่างการใช้งาน</description>
-    </item>
-    
-    <item>
-      <title>ไพธอนมาตรฐาน</title>
-      <link>https://jittat.github.io/data-examples/process/filtering/filtering-python-std/</link>
-      <pubDate>Sat, 17 Feb 2018 23:31:48 +0700</pubDate>
-      
-      <guid>https://jittat.github.io/data-examples/process/filtering/filtering-python-std/</guid>
-      <description>ด้านล่างเป็นการสั่งกรองข้อมูลในไพธอน
-data = [ x in items if x.height &amp;gt; 10 ] จากตัวอย่างข้อมูลนักเรียน ด้านล่างเป็นการกรองข้อมูลแบบต่าง ๆ
-กรองด้วยเงื่อนไขอย่างง่าย data = [ x in items if x.height &amp;gt; 10 ]</description>
     </item>
     
   </channel>

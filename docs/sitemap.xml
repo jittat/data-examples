@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jittat.github.io/data-examples/process/input/</loc>
+    <loc>https://jittat.github.io/data-examples/process/input/input-python-std/</loc>
     <lastmod>2018-02-17T23:29:54+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jittat.github.io/data-examples/process/filtering/</loc>
+    <loc>https://jittat.github.io/data-examples/process/input/</loc>
+    <lastmod>2018-02-19T00:36:04+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jittat.github.io/data-examples/process/filtering/filtering-python-std/</loc>
     <lastmod>2018-02-17T23:31:48+07:00</lastmod>
   </url>
   
@@ -20,6 +25,11 @@
   <url>
     <loc>https://jittat.github.io/data-examples/present/</loc>
     <lastmod>2018-02-17T23:26:05+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jittat.github.io/data-examples/process/filtering/</loc>
+    <lastmod>2018-02-19T01:02:30+07:00</lastmod>
   </url>
   
   <url>

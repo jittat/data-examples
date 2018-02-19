@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>แนะนำไพธอน :: การเขียนโปรแกรมประมวลผลข้อมูล</title>
+    <title>ไพธอนมาตรฐาน :: การเขียนโปรแกรมประมวลผลข้อมูล</title>
     
     
     <link href="/data-examples/css/nucleus.css?1519006775" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/data-examples/python/">
+  <body class="" data-url="/data-examples/process/filtering/filtering-python-std/">
     <nav id="sidebar" class="">
 
 
@@ -92,7 +92,7 @@
   
     
     <li data-nav-id="/data-examples/process/" title="การประมวลผล" class="dd-item 
-        
+        parent
         
         
         ">
@@ -172,7 +172,7 @@
   
     
     <li data-nav-id="/data-examples/process/filtering/" title="การกรองข้อมูล" class="dd-item 
-        
+        parent
         
         
         ">
@@ -196,7 +196,7 @@
  
   
     
-      <li data-nav-id="/data-examples/process/filtering/filtering-python-std/" title="ไพธอนมาตรฐาน" class="dd-item ">
+      <li data-nav-id="/data-examples/process/filtering/filtering-python-std/" title="ไพธอนมาตรฐาน" class="dd-item active">
         <a href="/data-examples/process/filtering/filtering-python-std/">
         ไพธอนมาตรฐาน
         
@@ -276,8 +276,8 @@
   
     
     <li data-nav-id="/data-examples/python/" title="แนะนำไพธอน" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/data-examples/python/">
@@ -346,6 +346,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
                   <span class="links">
                     
           
@@ -354,7 +356,19 @@
             
           
           
-            <a href='/data-examples/'>การเขียนโปรแกรมวิเคราะห์ข้อมูล</a> > แนะนำไพธอน
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/data-examples/'>การเขียนโปรแกรมวิเคราะห์ข้อมูล</a> > <a href='/data-examples/process/'>การประมวลผล</a> > <a href='/data-examples/process/filtering/'>การกรองข้อมูล</a> > ไพธอนมาตรฐาน
+          
+         
+          
+         
           
          
           
@@ -362,14 +376,34 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#กรองด-วยเง-อนไขอย-างง-าย">กรองด้วยเงื่อนไขอย่างง่าย</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>ไพธอนมาตรฐาน</h1>
           
 
         
@@ -377,19 +411,22 @@
 
 
 
-<h3 id="ไพธอน">ไพธอน</h3>
+<p>ด้านล่างเป็นการสั่งกรองข้อมูลในไพธอน</p>
 
-<h1 id="แนะนำภาษาไพธอน">แนะนำภาษาไพธอน</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data <span style="color:#f92672">=</span> [ x <span style="color:#f92672">in</span> items <span style="color:#66d9ef">if</span> x<span style="color:#f92672">.</span>height <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span> ]</code></pre></div>
 
-<p>Lorem Ipsum.</p>
+<p>จากตัวอย่างข้อมูลนักเรียน ด้านล่างเป็นการกรองข้อมูลแบบต่าง ๆ</p>
+
+<h4 id="กรองด-วยเง-อนไขอย-างง-าย">กรองด้วยเงื่อนไขอย่างง่าย</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data <span style="color:#f92672">=</span> [ x <span style="color:#f92672">in</span> items <span style="color:#66d9ef">if</span> x<span style="color:#f92672">.</span>height <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span> ]</code></pre></div></p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -421,8 +458,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -439,37 +474,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -498,6 +504,59 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -538,26 +597,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -576,10 +615,10 @@
 
 
         
-            <a class="nav nav-prev" href="/data-examples/prepare/" title="การเตรียมข้อมูล"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/data-examples/process/filtering/" title="การกรองข้อมูล"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/data-examples/r-lang/" title="แนะนำภาษา R" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/data-examples/present/" title="การนำเสนอ" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -609,3 +648,4 @@
 
   </body>
 </html>
+

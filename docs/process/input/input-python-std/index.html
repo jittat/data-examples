@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>แนะนำไพธอน :: การเขียนโปรแกรมประมวลผลข้อมูล</title>
+    <title>ไพธอนมาตรฐาน :: การเขียนโปรแกรมประมวลผลข้อมูล</title>
     
     
     <link href="/data-examples/css/nucleus.css?1519006775" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/data-examples/python/">
+  <body class="" data-url="/data-examples/process/input/input-python-std/">
     <nav id="sidebar" class="">
 
 
@@ -92,7 +92,7 @@
   
     
     <li data-nav-id="/data-examples/process/" title="การประมวลผล" class="dd-item 
-        
+        parent
         
         
         ">
@@ -119,7 +119,7 @@
   
     
     <li data-nav-id="/data-examples/process/input/" title="การนำเข้าข้อมูล" class="dd-item 
-        
+        parent
         
         
         ">
@@ -143,7 +143,7 @@
  
   
     
-      <li data-nav-id="/data-examples/process/input/input-python-std/" title="ไพธอนมาตรฐาน" class="dd-item ">
+      <li data-nav-id="/data-examples/process/input/input-python-std/" title="ไพธอนมาตรฐาน" class="dd-item active">
         <a href="/data-examples/process/input/input-python-std/">
         ไพธอนมาตรฐาน
         
@@ -276,8 +276,8 @@
   
     
     <li data-nav-id="/data-examples/python/" title="แนะนำไพธอน" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/data-examples/python/">
@@ -346,6 +346,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
                   <span class="links">
                     
           
@@ -354,7 +356,19 @@
             
           
           
-            <a href='/data-examples/'>การเขียนโปรแกรมวิเคราะห์ข้อมูล</a> > แนะนำไพธอน
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/data-examples/'>การเขียนโปรแกรมวิเคราะห์ข้อมูล</a> > <a href='/data-examples/process/'>การประมวลผล</a> > <a href='/data-examples/process/input/'>การนำเข้าข้อมูล</a> > ไพธอนมาตรฐาน
+          
+         
+          
+         
           
          
           
@@ -362,14 +376,33 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#การนำเข-าข-อม-ลจากไฟล-csv">การนำเข้าข้อมูลจากไฟล์ csv</a>
+<ul>
+<li><a href="#อ-านข-อม-ลท-ละบรรท-ดเป-น-list">อ่านข้อมูลทีละบรรทัดเป็น <code>list</code></a></li>
+<li><a href="#อ-านข-อม-ลท-ละบรรท-ดเป-น-dict">อ่านข้อมูลทีละบรรทัดเป็น <code>dict</code></a></li>
+<li><a href="#อ-านข-อม-ลท-งหมดจากน-นค-นรายการท-เป-น-dict">อ่านข้อมูลทั้งหมดจากนั้นคืนรายการที่เป็น <code>dict</code></a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>ไพธอนมาตรฐาน</h1>
           
 
         
@@ -377,19 +410,89 @@
 
 
 
-<h3 id="ไพธอน">ไพธอน</h3>
+<h2 id="การนำเข-าข-อม-ลจากไฟล-csv">การนำเข้าข้อมูลจากไฟล์ csv</h2>
 
-<h1 id="แนะนำภาษาไพธอน">แนะนำภาษาไพธอน</h1>
+<p>การนำเข้าข้อมูลจากไฟล์ csv สามารถทำได้โดยใช้ library <code>csv</code> ในไพธอน ผลลัพธ์จากการอ่านมีได้หลายแบบ</p>
 
-<p>Lorem Ipsum.</p>
+<h3 id="อ-านข-อม-ลท-ละบรรท-ดเป-น-list">อ่านข้อมูลทีละบรรทัดเป็น <code>list</code></h3>
+
+<p>ตัวอย่างด้านล่างแสดงการอ่านไฟล์ <code>scores.csv</code> ทีละบรรทัดออกมาเป็นรายการ (<code>list</code>) และพิมพ์ออกมา</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> csv
+
+csvfile <span style="color:#f92672">=</span> open(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;scores.csv&#39;</span>)
+reader <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>reader(csvfile)
+<span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> reader:
+    <span style="color:#66d9ef">print</span>(row)
+
+csvfile<span style="color:#f92672">.</span>close()</code></pre></div>
+
+<p>ผลลัพธ์</p>
+
+<pre><code>['name', 'score']
+['สมชาย', '50']
+['สมหญิง', '45']
+['สมศักดิ์', '80']
+['ประวิทย์', '78']
+['ประมาณ', '56']
+</code></pre>
+
+<h3 id="อ-านข-อม-ลท-ละบรรท-ดเป-น-dict">อ่านข้อมูลทีละบรรทัดเป็น <code>dict</code></h3>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> csv
+
+csvfile <span style="color:#f92672">=</span> open(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;scores.csv&#39;</span>)
+reader <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>DictReader(csvfile)
+<span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> reader:
+    <span style="color:#66d9ef">print</span>(row)
+
+csvfile<span style="color:#f92672">.</span>close()</code></pre></div>
+
+<p>ผลลัพธ์</p>
+
+<pre><code>{'name': 'สมชาย', 'score': '50'}
+{'name': 'สมหญิง', 'score': '45'}
+{'name': 'สมศักดิ์', 'score': '80'}
+{'name': 'ประวิทย์', 'score': '78'}
+{'name': 'ประมาณ', 'score': '56'}
+</code></pre>
+
+<h3 id="อ-านข-อม-ลท-งหมดจากน-นค-นรายการท-เป-น-dict">อ่านข้อมูลทั้งหมดจากนั้นคืนรายการที่เป็น <code>dict</code></h3>
+
+<p>ด้านล่างเป็นฟังก์ชัน <code>read_csv_data</code> ที่คืนค่าเป็น <code>list</code> ของ <code>dict</code> ที่สามารถนำไปใช้ต่อได้เลย และตัวอย่างการใช้งาน</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> csv
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">read_csv_data</span>(filename):
+    results <span style="color:#f92672">=</span> []
+    csvfile <span style="color:#f92672">=</span> open(filename)
+    reader <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>DictReader(csvfile)
+    <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> reader:
+        results<span style="color:#f92672">.</span>append(row)
+    csvfile<span style="color:#f92672">.</span>close()
+
+    <span style="color:#66d9ef">return</span> results
+
+<span style="color:#75715e"># ตัวอย่างการเรียกใช้ฟังก์ชัน</span>
+data <span style="color:#f92672">=</span> read_csv_data(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;scores.csv&#39;</span>)
+<span style="color:#66d9ef">for</span> d <span style="color:#f92672">in</span> data:
+    <span style="color:#66d9ef">print</span>(d[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;name&#39;</span>], d[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;score&#39;</span>])</code></pre></div>
+
+<p>ผลลัพธ์</p>
+
+<pre><code>สมชาย 50
+สมหญิง 45
+สมศักดิ์ 80
+ประวิทย์ 78
+ประมาณ 56
+</code></pre>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -421,8 +524,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -438,6 +539,43 @@
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -465,54 +603,6 @@
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
             
         
@@ -538,6 +628,21 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -555,9 +660,6 @@
             
                 
                     
-                        
-                        
-                    
                 
                 
 
@@ -576,10 +678,10 @@
 
 
         
-            <a class="nav nav-prev" href="/data-examples/prepare/" title="การเตรียมข้อมูล"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/data-examples/process/input/" title="การนำเข้าข้อมูล"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/data-examples/r-lang/" title="แนะนำภาษา R" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/data-examples/process/filtering/" title="การกรองข้อมูล" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -609,3 +711,4 @@
 
   </body>
 </html>
+
